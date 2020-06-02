@@ -286,7 +286,7 @@ def check_and_ban(update, user_id, should_message=True):
            update.effective_chat.kick_member(user_id)
            if should_message:
               update.effective_message.reply_text(
-              f"This person has been detected as spambot by @SpamWatch and has been removed!\nReason: <code>{spmban.reason}</code>",
+              f"This person has been detected as Globally Banned by @MandakiniSupport and has been removed!\nReason: <code>{spmban.reason}</code>",
               parse_mode=ParseMode.HTML)
               return
            else:
@@ -382,15 +382,15 @@ __help__ = """
 *Admin only:*
  × /spamshield <on/off/yes/no>: Will disable or enable the effect of Spam protection in your group.
 
-Spam shield uses @Spamwatch API and Global bans to remove Spammers as much as possible from your chatroom!
+Manadakini uses @MandakiniSupport for Global bans to remove Spammers as much as possible from your chatroom!
 
-*What is SpamWatch?*
+*What is Global Spamshield?*
 
-SpamWatch maintains a large constantly updated ban-list of spambots, trolls, bitcoin spammers and unsavoury characters.
-Skylee will constantly help banning spammers off from your group automatically So, you don't have to worry about spammers storming your group.
+Global Spamshielda keeps constantly updated ban-list of spammers, trolls, bitcoin spammers and unsavoury characters.
+Mandakini will constantly help banning spammers off from your group automatically So, you don't have to worry about spammers storming your group.
 """
 
-__mod_name__ = "Spam Shield"
+__mod_name__ = "Global Ban"
 
 GBAN_HANDLER = CommandHandler("gban", gban, pass_args=True,
                               filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
