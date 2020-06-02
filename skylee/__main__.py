@@ -32,7 +32,7 @@ Wanna Add me to your Group? Just click the button below!
 buttons = [[
 InlineKeyboardButton(text="Add to Group 👥", url="t.me/MandakiniProBot?startgroup=true"),
 InlineKeyboardButton(text="Updates 📢", url="https://t.me/MandakiniNews")
-InlineKeyboardButton(text="❓Support Group", url="https://t.me/AnieSupport")    
+InlineKeyboardButton(text="❓Support Group", url="https://t.me/MandakiniSupport")    
                   ]]
 
 buttons += [[InlineKeyboardButton(text="❓ My Commands ❔", callback_data="help_back")]]
