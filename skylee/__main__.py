@@ -22,21 +22,20 @@ from skylee.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-Hey there! my name is *{dispatcher.bot.first_name}*. If you have any questions on how to use me, Click Help button.
+Hey there! my name is *{dispatcher.bot.first_name}*. If you have any questions on how to use me,
 
-I'm a group management bot built in python3, using the \
-python-telegram-bot library, and am fully opensource - you can find what makes me tick \
-[Unknown_Hacker_X](https://t.me/Unknown_Hacker_X) . 
+I am a Powerful Group Management Bot With My Amazing Features. If You Need Any Help Type /help
 
 Wanna Add me to your Group? Just click the button below!
 """
 
 buttons = [[
-InlineKeyboardButton(text="Add to Group 👥", url="t.me/Gaana_Test_Bot?startgroup=true"),
-InlineKeyboardButton(text="Updates 📢", url="https://t.me/Gaana_Test_Bot")
+InlineKeyboardButton(text="Add to Group 👥", url="t.me/MandakiniProBot?startgroup=true"),
+InlineKeyboardButton(text="Updates 📢", url="https://t.me/MandakiniNews")
+InlineKeyboardButton(text="❓Support Group", url="https://t.me/AnieSupport")    
                   ]]
 
-buttons += [[InlineKeyboardButton(text="Help & Commands ❔", callback_data="help_back")]]
+buttons += [[InlineKeyboardButton(text="❓ My Commands ❔", callback_data="help_back")]]
 
 
 HELP_STRINGS = f"""
